@@ -59,8 +59,8 @@ pipeline {
                           }
                       }
                   }
-              }
-              stage('Deploy') {
+                }
+                stage('Deploy') {
                   steps {
                       echo "Deployment stage"
                       //TODO: deploy database
@@ -69,6 +69,7 @@ pipeline {
               }
            }
         }
+    }
     post {
         cleanup {
             echo "Clean workspace"
